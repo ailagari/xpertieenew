@@ -1,0 +1,775 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	outline: none;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote {
+	quotes: none;
+}
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+del {
+	text-decoration: line-through;
+}
+header, section, article, aside, nav, footer, address {
+	display: block;
+}
+@font-face {
+    font-family: 'latobold';
+    src: url('../fonts/lato-bold-webfont.woff2') format('woff2'),
+         url('../fonts/lato-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+	font-family: 'open_sansregular',Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #333;
+	overflow-x: hidden;
+	min-width: 320px;
+}
+input,textarea,select{
+	font-family: 'open_sansregular',Arial, Helvetica, sans-serif;
+}
+p{
+	line-height: 1.6em;
+}
+br.clear{
+	clear: both;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+a:hover,[type="submit"]:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1200px;
+}
+#spotlight {
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+
+#spotlight img{
+    width: 100%;
+    display: block;
+    position: absolute;
+    z-index: -1;
+}
+#header{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 150px;
+    
+}
+#header div.left{
+	margin-top: 20px;
+}
+#header div.left h1{
+    display: block;
+    margin-top: 0;
+    padding-top: 0;
+}
+#header div.left h1 a{
+    display: block;
+}
+#header div.left h1 a img{
+    width: 200px;
+    display: block;
+}
+#header div.right{
+    margin-top: 40px;
+    margin-left: 250px;
+}
+#header div.right nav{
+    
+}
+#header div.right nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#header div.right nav ul li{
+	margin-right: 40px;
+	list-style: none;
+}
+#header div.right nav ul li a{
+    text-decoration: none;
+    text-align: center;
+	color: #0F9D58;
+	padding-bottom: 10px;
+	border-bottom: 2px solid white;
+	font-size: 17px;
+	font-family: 'latobold';
+}
+#header div.right nav ul li a:hover{
+	border-bottom: 2px solid #0F9D58;
+}
+#header div.right nav ul li:nth-child(6){
+    
+    margin-right: 0;
+    border-bottom: none;
+}
+#header div.right nav ul li:nth-child(6) a{
+    color: white;
+    padding: 10px 20px;
+	background-color: #0F9D58;
+	border-radius: 5px;
+	border-bottom: none;
+}
+#spotlightcontent{
+    display: flex;
+	justify-content: space-between;
+}
+#spotlightcontent div.left{
+    width: 50%;
+    margin-left: 5%;
+}
+#spotlightcontent div.left h1{
+	color: #0F9D58;
+	font-family: 'latobold';
+	font-size: 69px;
+}
+#spotlightcontent div.left h2{
+	margin-top: 30px;
+	color: #0F9D58;
+	font-family: 'latoregular';
+	font-size: 22px;
+}
+#spotlightcontent div.left div.spotlight-login{
+	width: 150px;
+	margin-top: 30px;
+	position: relative;
+}
+#spotlightcontent div.left div.spotlight-login a{
+    display: flex;
+    padding: 15px 20px;
+	background-color: #0F9D58;
+	border-radius: 5px;
+}
+#spotlightcontent div.left div.spotlight-login a span{
+	color: white;
+	margin-left: 5px;
+	font-family: 'latobold';
+	font-size: 16px
+}
+
+#spotlightcontent div.right{
+    
+}
+#spotlightcontent div.right img{
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    width: 650px;
+    display: block;
+}
+#spotbottom{
+	width: 100%;
+	height: 180px;
+	background-color: #79f5b9;
+}
+#spotbottom ul{
+	display: flex;
+	justify-content: space-around;
+}
+#spotbottom ul li{
+	margin-right: 30px;
+	background-color: white;
+	width: 25%;
+	margin-top: 40px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	box-shadow: 0px 1px 12px 0px rgba(168,159,168,1);
+}
+#spotbottom ul li:hover{
+
+	box-shadow: 0px 1px 12px 0px rgb(101, 241, 143);
+}
+#spotbottom ul li img{
+	width: 100px;
+	margin-top: 25px;
+	display: block;
+}
+#spotbottom ul li:nth-child(4) img{
+	width: 180px;
+	margin-top: 25px;
+	display: block;
+}
+#spotbottom ul li h3{
+	font-family: 'latobold';
+	margin-top: 25px;
+	font-size: 18px;
+	margin-bottom: 30px;
+	color: #0F9D58;
+}
+#about{
+	padding: 100px 0;
+}
+#about div.aboutcontent{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#about div.aboutcontent div.left{
+	width: 50%;
+}
+#about div.aboutcontent div.left h4{
+	font-family: 'latoregular';
+	font-size: 24px;
+	color: grey;
+}
+#about div.aboutcontent div.left h2{
+	font-family: 'latobold';
+	font-size: 50px;
+	margin:30px 0;
+	color: #0F9D58;
+}
+#about div.aboutcontent div.left p{
+	font-family: 'latoregular';
+	font-size: 16px;
+	color: grey;
+	
+}
+#about div.aboutcontent div.left a{
+	display: inline-block;
+	margin: 30px 0;
+	padding: 10px 20px;
+	border:1px solid #0F9D58;
+	background-color: #0F9D58;
+
+}
+#about div.aboutcontent div.left a:hover{
+	display: inline-block;
+	margin: 30px 0;
+	padding: 10px 20px;
+	border:1px solid #0F9D58;
+	background-color: white;
+
+}
+#about div.aboutcontent div.left a div.buttonelement{
+	display: flex;
+	justify-content: space-between;
+}
+#about div.aboutcontent div.left a div.buttonelement span{
+	color: white;
+	font: 16px;
+	font-family: 'latobold';
+	
+}
+#about div.aboutcontent div.left a:hover div.buttonelement span{
+	color: #0F9D58;
+	font: 16px;
+	font-family: 'latobold';
+	
+}
+#about div.aboutcontent div.left a div.buttonelement img{
+	width: 15px;
+	display: block;
+	position: absolute;
+	z-index: 2;
+	margin-left: 100px;
+}
+#about div.aboutcontent div.right{
+	width: 50%;
+}
+#about div.aboutcontent div.right img{
+	width: 100%;
+}
+#features{
+	position: relative;
+}
+#features div.featureback{
+	width: 75%;
+	height: 400px;
+	background-color: #eef9ff;
+	position: absolute;
+	z-index: -1;
+}
+#features div.featurecontents{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#features div.featurecontents div.left{
+	width: 50%;
+}
+#features div.featurecontents div.left ul{
+	display: flex;
+
+}
+#features div.featurecontents div.left ul li{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+#features div.featurecontents div.left ul li:nth-child(2n+1):hover{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 0px 1px 12px 0px rgb(101, 241, 143);
+}
+#features div.featurecontents div.left ul li:nth-child(2){
+	width: 30%;
+}
+#features div.featurecontents div.left ul li:nth-child(3){
+	margin-right: 0;
+}
+#features div.featurecontents div.left ul li img{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	width: 75px;
+}
+#features div.featurecontents div.left ul li h4{
+	font-family: 'latobold';
+	font-size: 18px;
+	text-align: center;
+	color: #0F9D58;
+	margin-bottom: 30px;
+}
+#features div.featurecontents div.left ul li p{
+	font-family: 'latoregular';
+	font-size: 14px;
+	text-align: center;
+	color: grey;
+}
+#features div.featurecontents div.right{
+	position: relative;
+	margin-right: -120px;
+	width: 50%;
+}
+#features div.featurecontents div.right h4{
+	font-family: 'latoregular';
+	font-size: 22px;
+	color: grey;
+	position: absolute;
+	z-index: 1;
+	left: 220px;
+}
+#features div.featurecontents div.right h2{
+	font-family: 'latobold';
+	font-size: 42px;
+	color: #0F9D58;
+	margin-top: 50px;
+}
+#features div.featurecontents div.right img{
+	position: absolute;
+	z-index: -1;
+	top: -64px;
+	right: 150px;
+}
+
+#tools{
+	padding: 250px 0 100px 0;
+
+}
+#tools div.toolscontent{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#tools div.toolscontent div.left{
+	width: 50%;
+}
+#tools div.toolscontent div.left h4{
+	font-family: 'latoregular';
+	font-size: 24px;
+	color: grey;
+}
+#tools div.toolscontent div.left h2{
+	font-family: 'latobold';
+	font-size: 50px;
+	margin:30px 0;
+	color: #0F9D58;
+}
+#tools div.toolscontent div.left p{
+	font-family: 'latoregular';
+	font-size: 16px;
+	color: grey;
+	
+}
+#tools div.toolscontent div.left a{
+	display: inline-block;
+	margin: 30px 0;
+	padding: 10px 20px;
+	border:2px solid #0F9D58;
+	background-color: #0F9D58;
+}
+#tools div.toolscontent div.left a:hover{
+	display: inline-block;
+	margin: 30px 0;
+	padding: 10px 20px;
+	border:2px solid #0F9D58;
+	background-color: white;
+}
+#tools div.toolscontent div.left a div.buttonelement{
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	align-items: center;
+}
+#tools div.toolscontent div.left a div.buttonelement span{
+	color: white;
+	font-size: 16px;
+	font-family: 'latobold';
+	
+}
+#tools div.toolscontent div.left a:hover div.buttonelement span{
+	color: #0F9D58;
+	font-size: 16px;
+	font-family: 'latobold';
+	
+}
+#tools div.toolscontent div.left a div.buttonelement img{
+	width: 15px;
+	display: block;
+	position: absolute;
+	z-index: 2;
+	margin-left: 100px;
+}
+#tools div.toolscontent div.right{
+	position: relative;;
+}
+#tools div.toolscontent div.right img{
+    width: 800px;
+    position: absolute;
+    right: -230px;
+    top: -250px;
+}
+#pricing{
+	padding-top: 100px;
+	margin-bottom: 100px;
+}
+#pricing h4{
+	font-size: 22px;
+	font-family: 'latoregular';
+	text-align: center;
+	color: grey;
+	margin-bottom: 30px;
+}
+#pricing h2{
+	font-size: 42px;
+	font-family: 'latobold';
+	text-align: center;
+	color: #0F9D58;
+	margin-bottom: 30px;
+}
+#pricing div.containers{
+	display: flex;
+}
+#pricing div.containers div.container1{
+	width: 33%;
+	background-color:white;
+	padding: 30px;
+	border-radius: 25px;
+	box-shadow: 0px 1px 29px -4px rgba(173,166,173,1);
+	margin-right: 30px;
+}
+#pricing div.containers div.container1:hover{
+	width: 33%;
+	background-color:#0F9D58;
+	padding: 30px;
+	border-radius: 25px;
+	box-shadow: 0px 1px 29px -4px rgb(122, 248, 122);
+	margin-right: 30px;
+}
+#pricing div.containers div.container1 h4{
+	font-size: 22px;
+	font-family: 'latoregular';
+	text-align: center;
+	color: grey;
+	margin-bottom: 30px;
+}
+#pricing div.containers div.container1:hover h4{
+	font-size: 22px;
+	font-family: 'latoregular';
+	text-align: center;
+	color: white;
+	margin-bottom: 30px;
+}
+#pricing div.containers div.container1 h2{
+	font-size: 42px;
+	font-family: 'latobold';
+	text-align: center;
+	color: #5e5454;
+	margin-bottom: 30px;
+}
+#pricing div.containers div.container1:hover h2{
+	font-size: 42px;
+	font-family: 'latobold';
+	text-align: center;
+	color: white;
+	margin-bottom: 30px;
+}
+#pricing div.containers div.container1 h2 sup{
+	font-size: 22px;
+	vertical-align: super;
+	font-family: 'latobold';
+	color: #5e5454;
+	margin-bottom: 30px;
+}
+#pricing div.containers div.container1:hover h2 sup{
+	font-size: 22px;
+	vertical-align: super;
+	font-family: 'latobold';
+	color: white;
+	margin-bottom: 30px;
+}
+#pricing div.containers div.container1 hr{
+	border-bottom: 2px solid grey;
+	width: 100%;
+	margin-bottom: 30px;
+}
+#pricing div.containers div.container1:hover hr{
+	border-bottom: 2px solid white;
+	width: 100%;
+	margin-bottom: 30px;
+}
+#pricing div.containers div.container1 ul{
+
+}
+#pricing div.containers div.container1 ul li{
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+	padding: 0 25px;
+}
+#pricing div.containers div.container1 ul li img{
+	display: inline-block;
+	margin-right: 30px;
+}
+#pricing div.containers div.container1 ul li h5{
+	display: inline-block;
+	font-size: 18px;
+	font-family: 'latoregular';
+	color: grey;
+}
+#pricing div.containers div.container1:hover ul li h5{
+	display: inline-block;
+	font-size: 18px;
+	font-family: 'latoregular';
+	color: white;
+}
+#pricing div.containers div.container1 div.viewmore{
+	width: 75%;
+	margin: 0 auto;
+}
+#pricing div.containers div.container1 div.viewmore a{
+	font-size: 22px;
+	display: block;
+	text-align: center;
+	font-family: 'latoregular';
+	color: #0F9D58;
+	padding: 10px 30px;
+	border: 2px solid #0F9D58;	
+}
+#pricing div.containers div.container1:hover div.viewmore a{
+	font-size: 22px;
+	display: block;
+	text-align: center;
+	font-family: 'latoregular';
+	color: white;
+	padding: 10px 30px;
+	border: 2px solid white;
+}
+#banner{
+	position: relative;
+}
+#banner img{
+	z-index: -1;
+	display: block;
+	width: 100%;
+}
+#banner div.bannercontent{
+	position: absolute;
+	top: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+
+}
+#banner div.bannercontent div.left{
+	margin-right: 300px;
+}
+#banner div.bannercontent div.left h2{
+	font-size: 48px; 
+	font-family: 'latobold';
+	color: white;
+}
+#banner:hover div.bannercontent div.left h2{
+	font-size: 48px; 
+	font-family: 'latobold';
+	color: #0F9D58;
+}
+#banner div.bannercontent div.right{ 
+	
+}
+#banner div.bannercontent div.right div.createnow{ 
+	
+}
+#banner div.bannercontent div.right div.createnow a{ 
+	display: flex;
+    padding: 15px 30px;
+	border: 2px solid white;
+}
+#banner div.bannercontent div.right div.createnow:hover a{ 
+	display: flex;
+    padding: 15px 30px;
+	background-color: #0F9D58;
+	border: 2px solid #0F9D58;
+}
+
+#banner div.bannercontent div.right div.createnow a span{ 
+	color: white;
+	margin-right: 5px;
+	font-family: 'latobold';
+	font-size: 18px;
+}
+#banner div.bannercontent div.right div.createnow a img{ 
+	width: 15px;
+	display: block;
+	top: 10px;
+	right: 20px;
+	z-index: 2;
+}
+#footer{
+}
+#footer div.footercontent{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+}
+#footer div.footercontent div.social{
+	display: inline-block;
+	width: 30%;
+}
+#footer div.footercontent div.social img{
+	display: block;
+	width: 100%;
+}
+#footer div.footercontent div.social div.socialmedias{
+	
+}
+#footer div.footercontent div.social div.socialmedias ul{
+	display: flex;
+	justify-content: center;
+}
+#footer div.footercontent div.social div.socialmedias ul li {
+    margin-right: 10px;
+    height: 10px;
+    width: 35px;
+}
+#footer div.footercontent div.social div.socialmedias ul li:nth-child(4){
+	margin-right: 0;
+}
+#footer div.footercontent div.social div.socialmedias ul li img{
+	
+}
+#footer div.footercontent div.company, div.links{
+	
+}
+#footer div.footercontent div.company h4, div.links h4{
+	color: #0F9D58;
+	font-family: 'latobold';
+	font-size: 18px;
+	margin-bottom: 30px;
+
+}
+#footer div.footercontent div.company, div.links ul{
+	
+}
+#footer div.footercontent div.company, div.links ul li{
+	
+}
+#footer div.footercontent div.company ul li h5 a, div.links ul li h5 a{
+	color: #0F9D58;
+	font-family: 'latoregular';
+	font-size: 18px;
+	margin-bottom: 10px;
+	display: block;
+}
+#footer div.footercontent div.contact{
+    margin-top: 86px;	
+}
+#footer div.footercontent div.contact h4{
+	color: #0F9D58;
+	font-family: 'latobold';
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+#footer div.footercontent div.contact ul{
+	
+}
+#footer div.footercontent div.contact ul li{
+	display: flex;
+	margin-bottom: 10px
+}
+#footer div.footercontent div.contact ul li img{
+	display: inline-block;
+	margin-right: 10px;
+}
+#footer div.footercontent div.contact ul li h5{
+	color: #0F9D58;
+	font-family: 'latoregular';
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+#footer div.footercredits{
+	border-top: 2px solid #0F9D58;
+}
+#footer div.footercredits h4{
+	margin: 20px auto;
+	text-align: center;
+	color: #0F9D58;
+	font-family: 'latoregular';
+	font-size: 18px;
+}
+#footer div.footercredits h4 span{
+	color: red;
+	font-family: 'latobold';
+	font-size: 18px;
+}
+
